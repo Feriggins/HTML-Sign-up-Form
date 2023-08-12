@@ -12,140 +12,146 @@
     </nav>
     <main>
         <h2>Vacation Contest Sign-Up Form</h2>
-        <form> <!-- TODO: Set Action and Method Properties -->
-	    <fieldset>
-            <legend> Your Contact Info</legend>  <!--This is the Legend creating the box-->
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vacation Time!</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<nav>
+Enter the Contest for the Vacation of a Lifetime
+</nav>
+<main>
 
-            
-            <table> <!--Table started here -->
-			<tr>
-			   <td> 
-				First Name: 
-			</td>
-			<td>
-		<input type="First" id="firstname" placeholder="Enter">
-			 </td>
-             <tr>
-                <td> 
-                 Last Name: 
-             </td>
-             <td>
-         <input type="Last Name" id="lastname" placeholder="Enter">
-              </td>
-            <div>
-                <label for="firstname">Your First Name</label>
-                <tr>
-                    <td> 
-                        Email: 
-                 </td>
-                 <td>
-             <input type="mail" id="Email" placeholder="Enter">
-                  </td>        
-                  <tr>
-                    <td> 
-                        Street Address : 
-                 </td>
-                 <td>
-             <input type="text" id=" Street Address" Placeholder=" Enter">
-                <select name="state"> 
-                <option value="AK">Alaska</option>
-                <option value="J">California</option>
-                <option value="AK">Connecticut</option>
-                <option value="AK">North Carolina</option>
 
-            </select>   <!--States End here -->
-            
-            </td>
-                    <tr>
-                       <td> 
-                        City: 
-                    </td>
-                    <td>
-                <input type="City" id="City" placeholder="Enter">
-            </td>     
-             </td>
-             <tr>
-            <td> 
-                        State: 
-                </td>
-                <td>
-                <input type="t" id="State" placeholder="Enter">
-            </td>     
-            </td>
-                <tr>
-                 <td> 
-                          Zip: 
-                    </td>
-                <td>
-                    <input type="zip" id="Zip" placeholder="Enter">
-        </td>       
-             </fieldset>
 
-           
+<h2>Vacation Contest Sign-Up Form</h2>
+<form action="results.html" method="GET"> <!--This is the Get method and action-->
+<label for="firstname">Your First Name</label>
+<input type="text" id="firstname" name="firstname" required>
+<label for="lastname">Your Last Name</label>
+<input type="text" id="lastname" name="Your Last Name" required>
 
-    </div>
-            
-    
-    <!-- TODO: Make fieldset and legend -->
-            <!-- 
-             
-             <!-- TODO: Second fieldset -->
-            <!-- TODO: Radio buttons for selecting preferred destination -->
-            <!-- TODO: Color input for selecting favorite color -->
-            <!-- TODO: Checkboxes for selecting extra add-ons -->
-            
-            <!-- TODO: Submit Button -->
-   </table>
-        
-
-        <fieldset>
-    <legend>Your Preferences</legend>
-    <h3>North Carolina</h3>
-    <div>
-        <input type="radio" id="aruba" name="location" value="Aruba" checked> 
-        <label for="aruba">Aruba</label>
-    </div>
-    <div>
-        <input type="radio" id="japan" name="location" value="Japan"> 
-        <label for="japan">Japan</label>
-    </div>
-    <div>
-        <input type="radio" id="reykjavik" name="location" value="Reykjavik"> 
-        <label for="reykjavik">Reykjavik</label>
-    </div>
-    <div>
-        <input type="radio" id="new-zealand" name="location" value="New Zealand"> 
-        <label for="new-zealand">New Zealand</label>
-    </div>
-        </fieldset>
-        
-        <legend>Extras for your Trip</legend>    <!--This is where I included Extras-->
-        <input type="checkbox" value="Sauna access">
-        Sauna access<br>
-        <input type="checkbox" value="In-room hot tub">
-        In-room hot tub<br>
-        <input type="checkbox" value="Full body massage">
-        Full body massage<br>
-        <tr>
-            <td> 
-              Submit: 
-            </td>
-            <td>
-        <input type= Submit value= Submit> 
-    </td>       
-</td>     
+<fieldset>
+<legend>Your Contact Info</legend>
+<label for="email">Your Email</label>
+<input type="text" id="email" name="email">
 </td>
 <tr>
- <td> 
-          Reset: 
-    </td>
 <td>
+Street Address :
+</td>
+<td>
+<input type="text" id=" Your Street Address" Placeholder=" 1234 Fake Street Lane, Suite 400">
+</td>
+<tr>
+<td>
+City:
+</td>
+<td>
+<input type="City" id=" Your City" placeholder="Boston">
+</td>
+<label for="state"> Your State</label>
+<input type="text" id="State" name=" Your State">
+<select name="state">
+<option value="AK">Alaska</option>
+<option value="AL">Alabama</option>
+<option value="AK">Alaska</option>
+<option value="AZ">Arizona</option>
+<option value="AR">Arkansas</option>
+<option value="IA">Iowa</option>
+<option value="ID">Idaho</option>
+<option value="IL">Illinois</option>
+<option value="IN">Indiana</option>
+<option value="KY">Kentucky</option>
+<option value="LA">Louisiana</option>
+<option value="MA">Massachussets</option>
+<option value="MD">Maryland</option>
+<option value="ME">Maine</option>
+<option value="MI">Michigan</option>
+<option value="MN">Minnesota</option>
+<option value="MO">Missouri</option>
+<option value="MS">Mississippi</option>
+<option value="MT">Montana</option>
+<option value="NC">North Carolina</option> 
+</select>
+<label for="Zip"> Zip</label>
+<input type="text" id="Zip" name=" Your Zip" placeholder="27660">
+</fieldset>
 
-        <input type= reset value= reset> 
-    
+
+
+
+
+
+
+
+
+
+
+<!-- TODO: Make fieldset and legend -->
+<!--
+
+<!-- TODO: Second fieldset -->
+<!-- TODO: Radio buttons for selecting preferred destination -->
+<!-- TODO: Color input for selecting favorite color -->
+<!-- TODO: Checkboxes for selecting extra add-ons -->
+
+<!-- TODO: Submit Button -->
+
+
+
+<fieldset>
+<legend>Who will Win the Vacation </legend>
+<h3>North Carolina</h3>
+<div>
+<input type="radio" id="aruba" name="location" value="Aruba" checked>
+<label for="aruba">Aruba</label>
+</div>
+<div>
+<input type="radio" id="japan" name="location" value="Japan">
+<label for="japan">Japan</label>
+</div>
+<div>
+<input type="radio" id="reykjavik" name="location" value="Reykjavik">
+<label for="reykjavik">Reykjavik</label>
+</div>
+<div>
+<input type="radio" id="new-zealand" name="location" value="New Zealand">
+<label for="new-zealand">New Zealand</label>
+
+<label for="favcolor">Select your favorite color:</label>
+<input type="color" id="favcolor" name="New Zealand" value="#ff0000"><br><br>
+
+
+</div>
+
+
+</fieldset>
+
+<legend>Extras for your Trip</legend> <!--This is where I included Extras-->
+<input type="checkbox" value="Sauna access">
+Sauna access<br>
+<input type="checkbox" value="In-room hot tub">
+In-room hot tub<br>
+<input type="checkbox" value="Full body massage">
+Full body massage<br>
+<tr>
+
+<input type="Submit" value="Enter the Contest">
 
 </form>
+
 </main>
+<footer>
+<h2>Resource Attributions</h2>
+    </main>
     <footer>
         <h2>Resource Attributions</h2>
-        
+        <p>All images provided for free use via <a href="https://unsplash.com/">Unsplash.com</a> whose generous <a href="https://unsplash.com/license">license details can be found here</a>.</p>
+    </footer>
+</body>
+</html>
